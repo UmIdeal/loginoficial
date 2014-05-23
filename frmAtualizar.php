@@ -134,7 +134,7 @@
                 <option value="PR">PR</option>
                 <option value="PE">PE</option>
                 <option value="PI">PI</option>
-                <option value="RJ">RJ</option> 
+                <option value="RJ">RJ</option>
                 <option value="RN">RN</option>
                 <option value="RS">RS</option>
                 <option value="RO">RO</option> 
