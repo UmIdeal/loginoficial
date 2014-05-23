@@ -55,8 +55,8 @@
                                                          required: 'Este Campo &eacute; obrigat&oacute;rio', 
                                                          equalTo:  '<font color="red">O campo confirmação de senha deve ser identico ao campo senha.</font>'
                                                       },
-					         termos: "Para se cadastrar você deve aceitar os termos de uso."
-                                              }
+					      
+                                             
 					});
 			
                                     });
@@ -87,7 +87,7 @@
 <body>
     
    
-<h1>Cadastro</h1>
+
 <form id="meu_form" action="inserir.php" method="post" >
            
 		<!--Login:<br />-->
@@ -178,12 +178,9 @@
 		<input type="password" name="senha" id="senha"/><br />
                 <label>Confirme a Senha:</label><br /> 
                 <input type="password" name="confsenha" id="confsenha"/><br />
-                Aceito os termos e condições:<br />
-		<input type="checkbox" name="termos" id="termos"><br />
-		<input type="submit" value="Cadastrar" onClick="return Validacao()"/>
 
+		<input type="submit" value="Atualizar" onClick="return Validacao()"/>
 
-                
 	</form>
 <br/><br/>
 
