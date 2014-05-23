@@ -95,24 +95,10 @@
                 <label> Nome completo: </label><br/>
                 <input type="text" name="nome" id="nome"/><br/>
                 <br/>
-                <label> Sexo: </label><br/>
-                <input type="radio" name="ma" value=""/><label> Masculino </label><br/> 
-                <input type="radio" name="ma" value=""/> <label> Feminino </label><br/> 
-                <br/>
-                <label> Data de Nascimento: </label><br/>
-                <input type="date" name="data" id="data"/><br/>
-                <br />
                 <label> Tipo de Usuário: </label><br/>
                 <input type="radio" name="fi" value="" /> <label> Juridica </label><br/> 
                 <input type="radio" name="fi" value=""/> <label> Física </label><br/> 
                 <br/>
-                <label> Tipo de Documento: </label><br/>
-                  <select>
-                  <option value="CPF">CPF </option>   
-                  <option value="CNPJ">CNPJ</option>
-                  </select>
-                  <input type="text" name="documento" id="documento" maxlength="15"  />
-                  <br/> <br/>
                 <label> Celular: </label><br/>
                 <input type="text" name="celular" size="1" maxlength="2" />       
                 <input type="text" name="celular" id="celular" size="8" maxlength="9" /><br/> 
