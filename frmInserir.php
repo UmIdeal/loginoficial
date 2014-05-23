@@ -44,7 +44,7 @@
                                                      required: 'Este Campo &eacute; obrigat&oacute;rio' , 
                                                      remote: '<font color="red">Este Login j&aacute; est&aacute; em uso.</font>'},//,
                                                 conflogin:{
-                                                       required: "O campo confirmação de email é obrigatorio.",
+                                                       required: 'O campo confirmação de email é obrigat&oacute;rio',
                                                        equalTo: '<font color="red">O campo confirmação de email deve ser identico ao campo email.</font>'
                                                      },
                                                 senha:{ 
@@ -111,7 +111,7 @@
                   <option value="CPF">CPF </option>   
                   <option value="CNPJ">CNPJ</option>
                   </select>
-                  <input type="text" name="documento" id="documento" />
+                  <input type="text" name="documento" id="documento" maxlength="15"  />
                   <br/> <br/>
                 <label> Celular: </label><br/>
                 <input type="text" name="celular" size="1" maxlength="2" />       
