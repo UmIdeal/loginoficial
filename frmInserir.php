@@ -115,7 +115,7 @@
                   <br/> <br/>
                 <label> Celular: </label><br/>
                 <input type="text" name="celular" size="1" maxlength="2" />       
-                <input type="text" name="celular" id="celular"/><br/> 
+                <input type="text" name="celular" id="celular" size="8" maxlength="9" /><br/> 
                  
                   
                   <h3> Meu endereço </h3>
