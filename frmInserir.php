@@ -86,8 +86,8 @@
  </head>
 <body>
     
-   
-<h1>Cadastro</h1>
+ 
+    <h1> Cadastro</h1>   
 <form id="meu_form" action="inserir.php" method="post" >
            
 		<!--Login:<br />-->
@@ -180,7 +180,7 @@
                 <input type="password" name="confsenha" id="confsenha"/><br />
                 Aceito os termos e condições:<br />
 		<input type="checkbox" name="termos" id="termos"><br />
-		<input type="submit" value="Cadastrar" onClick="return Validacao()"/>
+		<input type="submit" value="Cadastro" onClick="return Validacao()"/>
 
 
                 

@@ -1,4 +1,4 @@
-<?php
+ <?php
 echo '<meta charset=UTF-8>';
 include_once 'conexao/conecta.inc';
 $email = $_POST['login'];
