@@ -3,8 +3,7 @@
 echo '<meta charset=UTF-8>';
 include_once 'conexao/conecta.inc';
 
-if(isset($_POST['email']) and isset ($_POST['senha']))
-{
+if(isset($_POST['email']) and isset ($_POST['senha'])){
    $email = $_POST['email'];
    $senha = $_POST['senha'];
    $query = "SELECT * FROM usuario WHERE EMAIL_USUARIO='$email'";
