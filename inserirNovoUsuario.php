@@ -8,8 +8,7 @@ $tipoUsuario = 'RES';
 $query = "INSERT INTO usuario(EMAIL_USUARIO,SENHA_USUARIO,NOME_USUARIO,TIPO_USUARIO)";
 $query.= "VALUES('$email','$nome','$tipoUsuario')";
 
-if(mysql_query($query))
-{
+if(mysql_query($query)){
     echo '<script>alert("Cadastro efetuado com sucesso !")</script>';
     echo '< a href=frmlogin.php>Efetuar Login</a>';   
 }else{
