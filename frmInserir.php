@@ -161,13 +161,7 @@
                 <option value="SP">SE</option> 
                 <option value="SE">SP</option>
                 <option value="TO">TO</option>
-                </select> 
-                       <br />
-                  <h3> Tipo de cadastro </h3>
-                  <input type="radio" name="tipo" value=""/><label> Usuário </label><br/> 
-                  <input type="radio" name="tipo" value=""/> <label> Doador </label><br/>
-                  <input type="radio" name="tipo" value=""/><label> Doador e usuário </label><br/> 
-                <br/>
+                </select> <br />
                 <label>Digite um email válido:</label><br/>
                 <input type="email" name="login" id="login" />
 		<br />
