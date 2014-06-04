@@ -9,9 +9,14 @@ $tipopessoa  = $_POST['tipo_pessoa'];
 $tipodocumento  = $_POST['tipo_documento'];
 $numerodocumento  = $_POST['documento'];
 $celular  = $_POST['celular'];
+$cep  = $_POST['cep'];
+$endereco  = $_POST['endereco'];
+$bairro  = $_POST['bairro'];
+$uf  = $_POST['uf'];
 $email = $_POST['email'];
+$confirmeEmail  = $_POST['email'];
 $senha = $_POST['senha'];
-
+$confirmeSenha = $_POST['senha'];
 
 $tipoUsuario = 'RES';
 
