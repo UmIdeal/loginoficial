@@ -17,7 +17,6 @@ $email = $_POST['email'];
 $confirmeEmail  = $_POST['email'];
 $senha = $_POST['senha'];
 $confirmeSenha = $_POST['senha'];
-
 $tipoUsuario = 'RES';
 
 
