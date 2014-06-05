@@ -13,9 +13,9 @@ $result = mysql_query($query);
 $emailCadastrados = array();
 
 //Carregando a matriz com os emails do banco de dados
-while($usuarios = mysql_fetch_assoc($result))
+while($usuario = mysql_fetch_assoc($result))
 {
-    $emailCadastrados[]=$usuarios['EMAIL_USUARIO'];
+    $emailCadastrados[]=$usuario['EMAIL_USUARIO'];
 }
 
 // A função in_array(), verifica a existência de um certo valor dentro de uma matriz qualquer.
