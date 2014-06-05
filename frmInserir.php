@@ -119,20 +119,8 @@
                  
                   
                   <h3> Meu endereço </h3>
-               
-                <label> CEP: </label> <br/>
-                <input type="text" name="cep" id="cep" />
-                <br />  
-                <label> Endereço: </label> <br/>
-                <input type="text" name="endereço" id="endereço" />
-                <br />
-                <label> Bairro: </label> <br/>
-                <input type="text" name="bairro" id="cidade"  />  
-                <br /> 
-                <label> Cidade: </label> <br/>
-                <input type="text" name="cidade" id="cidade"  />  
-                <br /> 
-                <label> UF: </label> <br/>
+                  
+                     <label> UF: </label> <br/>
                 <select>
                 <option value="AC">AC</option>
                 <option value="AL">AL</option>
@@ -162,6 +150,20 @@
                 <option value="SE">SP</option>
                 <option value="TO">TO</option>
                 </select> <br />
+               
+                <label> CEP: </label> <br/>
+                <input type="text" name="cep" id="cep" />
+                <br />  
+                <label> Endereço: </label> <br/>
+                <input type="text" name="endereço" id="endereço" />
+                <br />
+                <label> Bairro: </label> <br/>
+                <input type="text" name="bairro" id="cidade"  />  
+                <br /> 
+                <label> Cidade: </label> <br/>
+                <input type="text" name="cidade" id="cidade"  />  
+                <br /> 
+             
                 <label>Digite um email válido:</label><br/>
                 <input type="email" name="login" id="login" />
 		<br />
