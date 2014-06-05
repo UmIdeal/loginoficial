@@ -33,6 +33,8 @@ $usuario = mysql_fetch_array($result);
            
        </table>    
 
-<a href=../logout.php?p=frmlogin.php>Logout</a>
+<br /> <br />
+ <a href='indexadmin.php'> Retornar ao Index </a> <br />
+<a href='../logout.php?p=frmlogin.php'> Logout </a>
 </body>
 </html>
