@@ -19,8 +19,8 @@ $usuario = mysql_fetch_array($result);
        <table border='1' class='bd'>
            <tr>
                <td> Nome do Usuário </td>
-               <td> Sexo </td>
-               <td> CPF </td>
+               <td> Gênero </td>
+               <td> Documento </td>
                <td> Celular </td>
                <td> CEP </td>
                <td> UF </td>
@@ -31,10 +31,26 @@ $usuario = mysql_fetch_array($result);
                <td> Senha </td>
            </tr>
            
+           <?php  while($usuario = mysql_fetch_array($sql))?>{
+           <tr>    
+               <td> <?php echo $usuario['NOME_USUARIO'] ?> </td>
+               <td> <?php echo $usuario['SEXO_USUARIO'] ?> </td>
+               <td> <?php echo $usuario['DOCUMENTO_USUARIO'] ?> </td>
+               <td> <?php echo $usuario['CELULAR_USUARIO'] ?> </td>
+               <td> <?php echo $usuario['CEP_USUARIO'] ?> </td>
+               <td> <?php echo $usuario['UF_USUARIO'] ?> </td>
+               <td> <?php echo $usuario['ENDERECO_USUARIO'] ?> </td>
+               <td> <?php echo $usuario['BAIRRO_USUARIO'] ?> </td>
+               <td> <?php echo $usuario['CIDADE_USUARIO'] ?> </td>
+               <td> <?php echo $usuario['EMAIL_USUARIO'] ?> </td>
+               <td> <?php echo $usuario['SENHA_USUARIO'] ?> </td>
+           </tr>
+           
        </table>    
-
+             }
 <br /> <br />
- <a href='indexadmin.php'> Retornar ao Index </a> <br />
+
+<a href='indexadmin.php'> Retornar ao Index </a> <br />
 <a href='../logout.php?p=frmlogin.php'> Logout </a>
 </body>
 </html>
