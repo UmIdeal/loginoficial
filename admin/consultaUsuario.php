@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Administrador de Conteúdo </title>
+        <title> Consulta de Usuários </title>
         <meta charset="UTF-8">
    </head>
+<body>
 <?php
 require_once '../includes/funcoesUteis.inc';
 validaAutenticacao('../frmlogin.php', 'ADM');
@@ -33,3 +34,5 @@ $usuario = mysql_fetch_array($result);
        </table>    
 
 <a href=../logout.php?p=frmlogin.php>Logout</a>
+</body>
+</html>
