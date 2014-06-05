@@ -15,5 +15,7 @@ include 'conexao/conecta.inc';
        
        <a href="consultaUsuario.php"> Consulta de Usuários </a>
        
+       <br /> <br />
+<a href='../logout.php?p=frmlogin.php'> Logout </a>
 </body>
 </html>
