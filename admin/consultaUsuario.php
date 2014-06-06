@@ -19,6 +19,7 @@ $usuario = mysql_fetch_array($result);
        <table border='1' class='bd'>
            <tr>
                <td> Nome do Usuário </td>
+               $sql = "SELECT NOME_USUARIO FROM loginoficial3ddb.usuario;
                <td> Gênero </td>
                <td> Documento </td>
                <td> Celular </td>
