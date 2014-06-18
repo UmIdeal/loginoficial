@@ -33,8 +33,7 @@ $sql = "INSERT INTO usuario(
                             BAIRRO_DOADOR,
                             UF_USUARIO,
                             EMAIL_USUARIO,
-                            SENHA_USUARIO,
-                            TIPO_USUARIO)";
+                            SENHA_USUARIO)";
 
 $sql .= "VALUES('$nome',
                 '$sexo',
