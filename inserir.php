@@ -24,16 +24,17 @@ $sql = "INSERT INTO usuario(
                             NOME_USUARIO,
                             SEXO_USUARIO,
                             NASCIMENTO_USUARIO,
-                            TIPO_USUARIO
-                            TIPO_DOCUMENTO
-                            NUMERO_DOCUMENTO
-                            CELULAR_USUARIO
-                            CEP_DOADOR
-                            ENDERECO_DOADOR
-                            BAIRRO_DOADOR
-                            UF_USUARIO
-                            EMAIL_USUARIO
-                            SENHA_USUARIO)";
+                            TIPO_PESSOA,
+                            TIPO_DOCUMENTO,
+                            NUMERO_DOCUMENTO,
+                            CELULAR_USUARIO,
+                            CEP_DOADOR,
+                            ENDERECO_DOADOR,
+                            BAIRRO_DOADOR,
+                            UF_USUARIO,
+                            EMAIL_USUARIO,
+                            SENHA_USUARIO,
+                            TIPO_USUARIO)";
 
 $sql .= "VALUES('$nome',
                 '$sexo',
