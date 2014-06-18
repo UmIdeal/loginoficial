@@ -12,14 +12,13 @@ echo '<h2> Consulta de Usuários </h2>';
 
 include 'conexao/conecta.inc';
 $cod_usuario = $_REQUEST['COD_USUARIO'];
-$sql = "SELECT * FROM  usuario WHERE COD_USUARIO = '$cod_usuario'";
+$sql = "SELECT * FROM  loginoficial3ddb.usuario WHERE COD_USUARIO = '$cod_usuario'";
 $result = mysql_query($sql);
 $usuario = mysql_fetch_array($result);
 ?>
        <table border='1' class='bd'>
            <tr>
                <td> Nome do Usuário </td>
-               $sql = "SELECT NOME_USUARIO FROM loginoficial3ddb.usuario;
                <td> Gênero </td>
                <td> Documento </td>
                <td> Celular </td>
@@ -30,6 +29,7 @@ $usuario = mysql_fetch_array($result);
                <td> Cidade </td>
                <td> Email </td>
                <td> Senha </td>
+               
            </tr>
            
            <?php  while($usuario = mysql_fetch_array($sql))?>{

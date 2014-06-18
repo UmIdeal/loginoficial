@@ -95,9 +95,10 @@
                 <label> Nome completo: </label><br/>
                 <input type="text" name="nome" id="nome"/><br/>
                 <br/>
-                <label> Sexo: </label><br/>
+                <label> Genêro: </label><br/>
                 <input type="radio" name="ma" value=""/><label> Masculino </label><br/> 
-                <input type="radio" name="ma" value=""/> <label> Feminino </label><br/> 
+                <input type="radio" name="ma" value=""/> <label> Feminino </label><br/>
+                <input type="radio" name="ma" value=""/> <label> Empresa </label><br/>
                 <br/>
                 <label> Data de Nascimento: </label><br/>
                 <input type="date" name="data" id="data"/><br/>

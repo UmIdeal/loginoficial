@@ -21,15 +21,33 @@ $tipoUsuario = 'RES';
 
 
 $sql = "INSERT INTO usuario(
-                            EMAIL_USUARIO,
-                            SENHA_USUARIO,
                             NOME_USUARIO,
-                            TIPO_USUARIO)";
+                            SEXO_USUARIO,
+                            NASCIMENTO_USUARIO,
+                            TIPO_USUARIO
+                            TIPO_DOCUMENTO
+                            NUMERO_DOCUMENTO
+                            CELULAR_USUARIO
+                            CEP_DOADOR
+                            ENDERECO_DOADOR
+                            BAIRRO_DOADOR
+                            UF_USUARIO
+                            EMAIL_USUARIO
+                            SENHA_USUARIO)";
 
-$sql .= "VALUES('$email',
-                '$senha',
-                '$nome',
-                '$tipoUsuario')";
+$sql .= "VALUES('$nome',
+                '$sexo',
+                '$nascimento',
+                '$tipopessoa'
+                '$tipodocumento'
+                '$numerodocumento'
+                '$celular'
+                '$cep'
+                '$endereco'
+                '$bairro'
+                '$uf'
+                '$email'
+                '$senha')";
 
      if(mysql_query($sql)){
          echo 'Usuário inserido com sucesso!';
