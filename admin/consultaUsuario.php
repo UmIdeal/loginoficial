@@ -52,6 +52,6 @@ $usuario = mysql_fetch_array($result);
 <br /> <br />
 
 <a href='indexadmin.php'> Retornar ao Index </a> <br />
-<a href='../logout.php?p=frmlogin.php'> Logout </a>
+<a href='../logout.php?p=frmlogin.php'><button> Logout </button></a>
 </body>
 </html>

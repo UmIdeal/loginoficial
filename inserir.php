@@ -20,6 +20,7 @@ $confirmeSenha = $_POST['senha'];
 $tipoUsuario = 'RES';
 
 
+
 $sql = "INSERT INTO usuario(
                             NOME_USUARIO,
                             SEXO_USUARIO,
