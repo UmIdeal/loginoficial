@@ -177,7 +177,7 @@
                 <input type="password" name="confsenha" id="confsenha"/><br />
                 Aceito os termos e condições:<br />
 		<input type="checkbox" name="termos" id="termos"><br />
-		<input type="submit" value="Cadastro" onClick="return Validacao()"/>
+		<input type="submit" value="Cadastro" onClick="return validate.js"/>
 
 
                 
