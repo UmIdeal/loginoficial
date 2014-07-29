@@ -31,24 +31,28 @@ $usuario = mysql_fetch_array($result);
                <td> Senha </td>
                
            </tr>
-           
-           <?php  while($usuario = mysql_fetch_array($sql))?>{
-           <tr>    
-               <td> <?php echo $usuario['NOME_USUARIO'] ?> </td>
-               <td> <?php echo $usuario['SEXO_USUARIO'] ?> </td>
-               <td> <?php echo $usuario['DOCUMENTO_USUARIO'] ?> </td>
-               <td> <?php echo $usuario['CELULAR_USUARIO'] ?> </td>
-               <td> <?php echo $usuario['CEP_USUARIO'] ?> </td>
-               <td> <?php echo $usuario['UF_USUARIO'] ?> </td>
-               <td> <?php echo $usuario['ENDERECO_USUARIO'] ?> </td>
-               <td> <?php echo $usuario['BAIRRO_USUARIO'] ?> </td>
-               <td> <?php echo $usuario['CIDADE_USUARIO'] ?> </td>
-               <td> <?php echo $usuario['EMAIL_USUARIO'] ?> </td>
-               <td> <?php echo $usuario['SENHA_USUARIO'] ?> </td>
-           </tr>
-           
-       </table>    
-             }
+           <?php 
+		for($n = 0; $n < $n_res; $n++){
+		$resultado = mysqli_fetch_assoc($res);
+		echo'
+        <tr>
+          <td><center>'.$usuario['NOME_USUARIO'].'</center></td>
+          <td><center>'.$usuario['SEXO_USUARIO'].'</center></td>
+          <td><center>'.$usuario['DOCUMENTO_USUARIO'].'</center></td>
+          <td><center>'.$usuario['CELULAR_USUARIO'].'</center></td>
+          <td><center>'.$usuario['CEP_USUARIO'].'</center></td>
+          <td><center>'.$usuario['UF_USUARIO'].'</center></td>
+          <td><center>'.$usuario['ENDERECO_USUARIO'].'</center></td>
+          <td><center>'.$usuario['BAIRRO_USUARIO'].'</center></td>
+          <td><center>'.$usuario['CIDADE_USUARIO'].'</center></td>
+          <td><center>'.$usuario['EMAIL_USUARIO'].'</center></td>
+          <td><center>'.$usuario['SENHA_USUARIO'].'</center></td>    
+          <td><label><center>
+            <input type="radio" name="marca" id="marca" value="'.$resultado['id'].'" /></center>
+          </label></td>
+        </tr>
+        ';}?>
+         
 <br /> <br />
 
 <a href='indexadmin.php'> Retornar ao Index </a> <br />
