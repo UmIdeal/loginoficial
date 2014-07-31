@@ -1,9 +1,9 @@
 <?php
 //configuração 
-$serverhost = 'localhost';
-$user       = 'root';
-$password   = '12345678';
-$database   = 'loginoficial3ddb';
+$serverhost = 'mysql.hostinger.com.br';
+$user       = 'u647106442_root';
+$password   = 'h3yuOxAldj';
+$database   = 'u647106442_db';
 //Estabelecendo a conexão
 
 $connection = mysql_connect($serverhost, $user, $password);

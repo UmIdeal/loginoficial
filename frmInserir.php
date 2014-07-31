@@ -96,21 +96,21 @@
                 <input type="text" name="nome" id="nome"/><br/>
                 <br/>
                 <label> Gênero: </label><br/>
-                <input type="radio" name="ma" value=""/><label> Masculino </label><br/> 
-                <input type="radio" name="ma" value=""/> <label> Feminino </label><br/>
-                <input type="radio" name="ma" value=""/> <label> Empresa </label><br/>
+                <input type="radio" name="sexo" value=""/><label> Masculino </label><br/> 
+                <input type="radio" name="sexo" value=""/> <label> Feminino </label><br/>
+                <input type="radio" name="sexo" value=""/> <label> Empresa </label><br/>
                 <br/>
                 <label> Data de Nascimento: </label><br/>
-                <input type="date" name="data" id="data"/><br/>
+                <input type="date" name="nascimento" id="data"/><br/>
                 <br />
                 <label> Tipo de Usuário: </label><br/>
-                <input type="radio" name="fi" value="" /> <label> Juridica </label><br/> 
-                <input type="radio" name="fi" value=""/> <label> Física </label><br/> 
+                <input type="radio" name="tipo_pessoa" value="" /> <label> Juridica </label><br/> 
+                <input type="radio" name="tipo_pessoa" value=""/> <label> Física </label><br/> 
                 <br/>
                 <label> Tipo de Documento: </label><br/>
                   <select>
-                  <option value="CPF">CPF </option>   
-                  <option value="CNPJ">CNPJ</option>
+                  <option name="tipo_documento" value="CPF">CPF </option>   
+                  <option name="tipo_documento" value="CNPJ">CNPJ</option>
                   </select>
                   <input type="text" name="documento" id="documento" maxlength="15"  />
                   <br/> <br/>
@@ -123,40 +123,40 @@
                   
                      <label> UF: </label> <br/>
                 <select>
-                <option value="AC">AC</option>
-                <option value="AL">AL</option>
-                <option value="AP">AP</option>
-                <option value="AM">AM</option>
-                <option value="BA">BA</option>
-                <option value="CE">CE</option> 
-                <option value="DF">DF</option> 
-                <option value="ES">ES</option> 
-                <option value="GO">GO</option> 
-                <option value="MA">MA</option>
-                <option value="MT">MT</option> 
-                <option value="MS">MS</option> 
-                <option value="MG">MG</option> 
-                <option value="PA">PA</option>
-                <option value="PB">PB</option>
-                <option value="PR">PR</option>
-                <option value="PE">PE</option>
-                <option value="PI">PI</option>
-                <option value="RJ">RJ</option> 
-                <option value="RN">RN</option>
-                <option value="RS">RS</option>
-                <option value="RO">RO</option> 
-                <option value="RR">RR</option>
-                <option value="SC">SC</option>
-                <option value="SP">SE</option> 
-                <option value="SE">SP</option>
-                <option value="TO">TO</option>
+                <option name="uf" value="AC">AC</option>
+                <option name="uf" value="AL">AL</option>
+                <option name="uf" value="AP">AP</option>
+                <option name="uf" value="AM">AM</option>
+                <option name="uf" value="BA">BA</option>
+                <option name="uf" value="CE">CE</option> 
+                <option name="uf" value="DF">DF</option> 
+                <option name="uf" value="ES">ES</option> 
+                <option name="uf" value="GO">GO</option> 
+                <option name="uf" value="MA">MA</option>
+                <option name="uf" value="MT">MT</option> 
+                <option name="uf" value="MS">MS</option> 
+                <option name="uf" value="MG">MG</option> 
+                <option name="uf" value="PA">PA</option>
+                <option name="uf" value="PB">PB</option>
+                <option name="uf" value="PR">PR</option>
+                <option name="uf" value="PE">PE</option>
+                <option name="uf" value="PI">PI</option>
+                <option name="uf" value="RJ">RJ</option> 
+                <option name="uf" value="RN">RN</option>
+                <option name="uf" value="RS">RS</option>
+                <option name="uf" value="RO">RO</option> 
+                <option name="uf" value="RR">RR</option>
+                <option name="uf" value="SC">SC</option>
+                <option name="uf" value="SP">SE</option> 
+                <option name="uf" value="SE">SP</option>
+                <option name="uf" value="TO">TO</option>
                 </select> <br />
                
                 <label> CEP: </label> <br/>
-                <input type="text" name="cep" id="cep" />
+                <input type="text" name="cep" id="cep" maxlength="8"/>
                 <br />  
                 <label> Endereço: </label> <br/>
-                <input type="text" name="endereço" id="endereço" />
+                <input type="text" name="endereco" id="endereço" />
                 <br />
                 <label> Bairro: </label> <br/>
                 <input type="text" name="bairro" id="cidade"  />  
@@ -166,15 +166,15 @@
                 <br /> 
              
                 <label>Digite um email válido:</label><br/>
-                <input type="email" name="login" id="login" />
+                <input type="email" name="email" id="login" />
 		<br />
                   <label>Confirme o  email:</label><br/>
-                <input type="email" name="conflogin" id="conflogin" />
+                <input type="email" name="email" id="conflogin" />
 		<br />
 		Senha:<br />
 		<input type="password" name="senha" id="senha"/><br />
                 <label>Confirme a Senha:</label><br /> 
-                <input type="password" name="confsenha" id="confsenha"/><br />
+                <input type="password" name="senha" id="confsenha"/><br />
                 Aceito os termos e condições:<br />
 		<input type="checkbox" name="termos" id="termos"><br />
 		<input type="submit" value="Cadastro" onClick="return Validacao()"/>

@@ -1,6 +1,7 @@
 <?php
 echo '<meta charset=UTF-8>';
 include_once 'conexao/conecta.inc';
+include_once 'classes/Bcrypt.class.php';
 
 $nome = $_POST['nome'];
 $sexo = $_POST['sexo'];
@@ -12,13 +13,16 @@ $celular  = $_POST['celular'];
 $cep  = $_POST['cep'];
 $endereco  = $_POST['endereco'];
 $bairro  = $_POST['bairro'];
-$uf  = $_POST['uf'];
+$uf = $_POST['uf'];
 $email = $_POST['email'];
 $confirmeEmail  = $_POST['email'];
 $senha = $_POST['senha'];
 $confirmeSenha = $_POST['senha'];
+$cidade = $_POST['cidade'];
 $tipoUsuario = 'RES';
 
+$custo = "08";
+$salt="h3yuOxAldj";
 
 
 $sql = "INSERT INTO usuario(
@@ -34,7 +38,9 @@ $sql = "INSERT INTO usuario(
                             BAIRRO_DOADOR,
                             UF_USUARIO,
                             EMAIL_USUARIO,
-                            SENHA_USUARIO)";
+                            SENHA_USUARIO
+                            CIDADE_USUARIO
+                            '$tipoUsuario')";
 
 $sql .= "VALUES('$nome',
                 '$sexo',
@@ -48,7 +54,9 @@ $sql .= "VALUES('$nome',
                 '$bairro'
                 '$uf'
                 '$email'
-                '$senha')";
+                '$cidade'    
+                '$senha'
+                '$tipoUsuario')";
 
      if(mysql_query($sql)){
          echo 'Usuário inserido com sucesso!';

@@ -2,6 +2,7 @@
 
 echo '<meta charset=UTF-8>';
 include_once 'conexao/conecta.inc';
+include_once 'classes/Bcrypt.class.php';
 
 if(isset($_POST['email']) and isset ($_POST['senha'])){
    $email = $_POST['email'];

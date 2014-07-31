@@ -16,7 +16,5 @@
             
             <a href="frmInserir.php"> Cadastre-se </a></br>
             <a href="frmRecuperarSenha.php"> Esqueceu sua senha? </a></br>
-            
         </body>
-    </html>   
-
+    </html>
