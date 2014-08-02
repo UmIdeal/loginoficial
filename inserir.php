@@ -1,7 +1,7 @@
 <?php
 echo '<meta charset=UTF-8>';
-include_once 'conexao/conecta.inc';
 include_once 'classes/Bcrypt.class.php';
+include_once 'conexao/conecta.inc';
 
 $nome = $_POST['nome'];
 $sexo = $_POST['sexo'];
@@ -16,7 +16,7 @@ $bairro  = $_POST['bairro'];
 $uf = $_POST['uf'];
 $email = $_POST['email'];
 $confirmeEmail  = $_POST['email'];
-$senha = $_POST['senha'];
+$senha = Bcrypt::hash($senha);
 $confirmeSenha = $_POST['senha'];
 $cidade = $_POST['cidade'];
 $tipoUsuario = 'RES';
@@ -58,8 +58,8 @@ $sql .= "VALUES('$nome',
                 '$senha'
                 '$tipoUsuario')";
 
-     if(mysql_query($sql)){
-         echo 'Usuário inserido com sucesso!';
-     }else{
-         echo mysql_error();
-     }
+   if(mysql_query($sql))
+    echo '<script> alert("Sucesso!");location.href="frmlogin.php"</script>';
+else 
+    echo mysql_error().'<br /> <a href=frmcadastro.php> Voltar </a>'
+        . '';

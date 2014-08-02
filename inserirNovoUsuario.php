@@ -1,7 +1,7 @@
- <?php
+<?php
 echo '<meta charset=UTF-8>';
-include_once 'conexao/conecta.inc';
 include_once 'classes/Bcrypt.class.php';
+include_once 'conexao/conecta.inc';
 
 $nome = $_POST['nome'];
 $sexo = $_POST['sexo'];
@@ -13,15 +13,19 @@ $celular  = $_POST['celular'];
 $cep  = $_POST['cep'];
 $endereco  = $_POST['endereco'];
 $bairro  = $_POST['bairro'];
-$uf  = $_POST['uf'];
+$uf = $_POST['uf'];
 $email = $_POST['email'];
 $confirmeEmail  = $_POST['email'];
-$senha = $_POST['senha'];
+$senha = Bcrypt::hash($senha);
 $confirmeSenha = $_POST['senha'];
 $cidade = $_POST['cidade'];
 $tipoUsuario = 'RES';
 
-$query = "INSERT INTO usuario(
+$custo = "08";
+$salt="h3yuOxAldj";
+
+
+$sql = "INSERT INTO usuario(
                             NOME_USUARIO,
                             SEXO_USUARIO,
                             NASCIMENTO_USUARIO,
@@ -34,30 +38,28 @@ $query = "INSERT INTO usuario(
                             BAIRRO_DOADOR,
                             UF_USUARIO,
                             EMAIL_USUARIO,
-                            SENHA_USUARIO,
-                            CIDADE_USUARIO,
+                            SENHA_USUARIO
+                            CIDADE_USUARIO
                             '$tipoUsuario')";
-$query.= "VALUES('$nome',
+
+$sql .= "VALUES('$nome',
                 '$sexo',
                 '$nascimento',
-                '$tipopessoa',
-                '$tipodocumento',
-                '$numerodocumento',
-                '$celular',
-                '$cep',
-                '$endereco',
-                '$bairro',
-                '$uf',
-                '$email',
-                '$cidade',   
-                '$senha')";
+                '$tipopessoa'
+                '$tipodocumento'
+                '$numerodocumento'
+                '$celular'
+                '$cep'
+                '$endereco'
+                '$bairro'
+                '$uf'
+                '$email'
+                '$cidade'    
+                '$senha'
+                '$tipoUsuario')";
 
-if(mysql_query($query)){
-    echo '<script>alert("Cadastro efetuado com sucesso !")</script>';
-    echo '< a href=frmlogin.php>Efetuar Login</a>';   
-}else{
-    echo '<script>
-               alert("Não foi possivel seu cadastro!")
-                location.href="index.php"
-          </script>';   
-}
+   if(mysql_query($sql))
+    echo '<script> alert("Sucesso!");location.href="frmlogin.php"</script>';
+else 
+    echo mysql_error().'<br /> <a href=frmcadastro.php> Voltar </a>'
+        . '';

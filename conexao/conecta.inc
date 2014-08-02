@@ -1,6 +1,6 @@
 <?php
 //configuração 
-$serverhost = 'mysql.hostinger.com.br';
+$serverhost = 'localhost';
 $user       = 'u647106442_root';
 $password   = 'h3yuOxAldj';
 $database   = 'u647106442_db';
