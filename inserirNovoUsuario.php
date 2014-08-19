@@ -18,7 +18,8 @@ $email = $_POST['email'];
 $confirmeEmail  = $_POST['email'];
 //$senha = Bcrypt::hash($senha);
 $senha = Bcrypt::hash($_POST['senha']);
-$confirmeSenha = $_POST['senha'];
+//$confirmeSenha = $_POST['senha'];
+$confirmeSenha = $_POST['confsenha'];
 $cidade = $_POST['cidade'];
 $tipoUsuario = 'RES';
 
