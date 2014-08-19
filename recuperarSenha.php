@@ -184,5 +184,7 @@ Obrigado!
  <?php
 
 }
+// Pra que enviar a senha antiga para o email do usuário e após enviar tbém uma senha provisória ???
+// Sendo que é a senha provisória é que foi atualizada no banco !!!
 
 ?>
