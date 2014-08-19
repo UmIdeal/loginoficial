@@ -16,3 +16,4 @@ if(Bcrypt::check($senha, $hash))
 }else{
     echo 'Senha Incorreta!';
 }
+// Kd o projeto completo ???
