@@ -174,7 +174,8 @@
 		Senha:<br />
 		<input type="password" name="senha" id="senha"/><br />
                 <label>Confirme a Senha:</label><br /> 
-                <input type="password" name="senha" id="confsenha"/><br />
+                <!--<input type="password" name="senha" id="confsenha"/><br />-->
+                <input type="password" name="confsenha" id="confsenha"/><br />
                 Aceito os termos e condições:<br />
 		<input type="checkbox" name="termos" id="termos"><br />
 		<input type="submit" value="Cadastro" onClick="return Validacao()"/>
